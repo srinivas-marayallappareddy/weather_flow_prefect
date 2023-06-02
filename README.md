@@ -18,7 +18,7 @@ This is a prefect flow that exracts weather information for a given zip code, sa
 
 ## Tasks
 ### get_weather_info
-This task would extract the weather info from openweather api for the zipcode that is passed in as an argument and returns the weather info in JSON format.
+This task would extract the weather info from openweather api for the zipcode that is passed in as an argument and returns the weather info in JSON format. Openweathermap API is used to retreive weather data. Please check https://openweathermap.org/api for more details.
 
 ### save_weather_info
 Save the weather info in a file in JSON format and returns the filename. 
@@ -65,7 +65,7 @@ pip install prefect
 ```
 
 ### Environment variables
-API_KEY - This is the api key obtained from openweathermap.org
+API_KEY - This is the api key obtained from openweathermap.org  
 WEATHER_INFO_DIR - Local directory where the weather data to be saved in files. 
 
 ## Usage
