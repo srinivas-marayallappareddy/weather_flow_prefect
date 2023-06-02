@@ -28,6 +28,7 @@ def get_weather_info(zipcode):
     try:
         response = requests.get(
             url=f"{OPEN_WEATHER_URL}?zip={zipcode},us&appid={API_KEY}")
+        response.raise_for_status()
     except requests.exceptions.RequestException as e:
         flow_logger = prefect.get_run_logger()
         flow_logger.error(f"API error while retrieving weather info: {str(e)}")
