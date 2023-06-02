@@ -65,7 +65,7 @@ pip install prefect
 ```
 
 ### Environment variables
-API_KEY - This is the api key obtained from openweathermap.org
+API_KEY - This is the api key obtained from openweathermap.org  
 WEATHER_INFO_DIR - Local directory where the weather data to be saved in files. 
 
 ## Usage
